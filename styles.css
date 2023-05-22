@@ -1,6 +1,7 @@
 :root {
-    --principalColor: #b50000;
-    --secondaryColor: #000000;
+    --colorP: #0b094f;
+    --colorS: white;
+    --secondColorS: #d0840a;
     --generalFont: 'Vollkorn', serif;
     --titleFont: 'Poltawski Nowy', serif;
 }
@@ -13,86 +14,117 @@
 
 /* utils */
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: var(--titleFont);
-    font-weight: 700;
-    margin-top: 0.8rem;
-    margin-bottom: 1rem;
+ul {
+    list-style-position: inside;
+    margin-left: 1.5rem;
 }
 
-.italic-text {
-    font-style: italic;
+h3,h4,h5,h6 {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    text-align: center;
+    color: black;
 }
 
 a {
     text-decoration: none;
-    color: var(--principalColor);
+    color: var(--secondColorS) ;
 }
 
-.sub-list-item {
-    margin-left: 1.5rem;
-}
-
-li {
-    padding: 0.1rem 0;
-}
-
-/* general */
+/* GENERAL */
 
 body {
     min-height: 100vh;
-    font-family: var(--generalFont);
-    font-size: 18px;
-
+    background: var(--colorP);
+    font-family: var(--titleFont);
+    color: var(--colorP);
 }
 
 main {
-    margin: auto;
-    width: 50%;
-    display: block;
-    text-align: center;
+    padding: 0 2rem;
 }
 
-
-
-table, th, td {
-    border: 1px solid var(--secondaryColor);
-    border-collapse: collapse;
+.picture-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex: 1;
 }
 
-th, td {
-    padding: 0.3rem;
+.profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    line-height: 1.6rem;
+    color: var(--colorP);
+    padding: 2rem;
 }
 
-ul {
-    list-style-position: inside;
-    text-align: left;
+.profil h1,h2 {
+    margin-bottom: 2rem;
 }
 
-.section-me table{
-    margin: auto;
+header {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background: var(--secondColorS);
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.section-funy-story p{
-text-align:center;
-line-height: 1.6rem;
+header img {
+    max-width: 80%;
+    max-height: 70%;
+    border-radius: 10px;
 }
 
-.section-hobbies {
+.content {
+    width: 100%;
+    background: var(--secondColorS);
+    border-radius: 10px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center ;
+table {
+    margin: auto;
+    border-collapse: collapse;
 }
 
-.link-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
+th, td {
+    border: 2px solid black;
+    padding: 0.5rem;
+    color: var(--colorP);
+    font-weight: 900;
+    text-align: center;
 }
+
+.title-hobbies {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondColorS);
+    font-weight: 900;
+}
+
+
+
+
 
