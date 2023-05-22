@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;600;700&family=Vollkorn:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Markdown to HTML</title>
 </head>
 <body>
     <main>
         <h1>J0K3RY</h1>
-        <p>Le savoir est infini</p>
-        <h2>Young Junior Dev trying to learn as much as possible</h2>
+        <p class="italic-text">Le savoir est infini</p>
+        <section class="section-me">
+            <h2>Young Junior Dev trying to learn as much as possible</h2>
         <table>
             <tr>
             <th>Questions</th>
@@ -38,33 +40,39 @@
                 <td><input type="checkbox"></td>
             </tr>
         </table>
+        </section>
 
-        <h3>Hobbies</h3>
+        <section class="section-hobbies">
+            <h3>Hobbies</h3>
         <ul>
             <li>Code</li>
             <li>Video Games</li>
-            <ul>
-                <li>Escape From Tarkov</li>
-                <li>Diablo IV</li>
-                <li>Rust</li>
+            <ul class="sub-list">
+                <li class="sub-list-item">Escape From Tarkov</li>
+                <li class="sub-list-item">Diablo IV</li>
+                <li class="sub-list-item">Rust</li>
             </ul>
             <li>My Family</li>
         </ul>
-
-        <h4>You can always count on me when...</h4>
+        </section>
+<section class="section-personality">
+    <h4>You can always count on me when...</h4>
         <p>I am a tidy person, I could make the structure clean and orderly</p>
-
-        <h5>A funny story</h5>
-        <p>Three old women are walking. On the floor there is a pile of used condoms. 
-        The first then complains: 
-        -Look at that, these little bastards don't respect anything anymore. 
-        The second takes a condom with her cane. They really do it anyway. 
-        In my time, we didn't need these things! 
-        The third takes the hood. She swallows the contents saying: 
-        -And in addition they leave the best...</p>
-
-        <h6>Other student</h6>
-        <a href="https://github.com/FLE0"><< Previous</a> || <a href="https://github.com/J0K3RY-03">My</a> || <a href="https://github.com/JeromeAprile">Next >></a>
+</section>
+<section class="section-funy-story">
+    <h5>A funny story</h5>
+    <p>Three old women are walking. On the floor there is a pile of used condoms. <br>
+    The first then complains: <br>
+    -Look at that, these little bastards don't respect anything anymore. <br>
+    The second takes a condom with her cane. They really do it anyway. <br>
+    In my time, we didn't need these things! <br>
+    The third takes the hood. She swallows the contents saying: <br>
+    -And in addition they leave the best...</p>
+</section>
+<footer>
+    <h6>Other student</h6>
+    <div class="link-footer"><a href="https://github.com/FLE0"><< Previous</a> || <a href="https://github.com/J0K3RY-03">My</a> || <a href="https://github.com/JeromeAprile">Next >></a></div>
+    </footer>
     </main>
 </body>
 </html>

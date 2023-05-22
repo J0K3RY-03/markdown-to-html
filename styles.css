@@ -1,0 +1,98 @@
+:root {
+    --principalColor: #b50000;
+    --secondaryColor: #000000;
+    --generalFont: 'Vollkorn', serif;
+    --titleFont: 'Poltawski Nowy', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* utils */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--titleFont);
+    font-weight: 700;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principalColor);
+}
+
+.sub-list-item {
+    margin-left: 1.5rem;
+}
+
+li {
+    padding: 0.1rem 0;
+}
+
+/* general */
+
+body {
+    min-height: 100vh;
+    font-family: var(--generalFont);
+    font-size: 18px;
+
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+
+
+table, th, td {
+    border: 1px solid var(--secondaryColor);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.3rem;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+.section-me table{
+    margin: auto;
+}
+
+.section-funy-story p{
+text-align:center;
+line-height: 1.6rem;
+}
+
+.section-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.link-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
